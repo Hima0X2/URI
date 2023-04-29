@@ -1,0 +1,60 @@
+#include<stdio.h>
+int main()
+{
+     int a,b,c,min,med,max;
+     scanf("%d%d%d",&a,&b,&c);
+     if((a<b)&&(a<c))
+     {
+          min=a;
+          {
+               if(b<c)
+               {
+                    med=b;
+                    max=c;
+               }
+               else
+               {
+                    med=c;
+                    max=b;
+               }
+          }
+     }
+     else if((b<a)&&(b<c))
+     {
+         min=b;
+           {
+               if(a<c)
+               {
+                    med=a;
+                    max=c;
+               }
+               else
+               {
+                    med=c;
+                    max=a;
+               }
+          }
+     }
+     else
+     {
+          min=c;
+          {
+               if(a<b)
+               {
+                    med=a;
+                    max=b;
+               }
+               else
+               {
+                    med=b;
+                    max=a;
+               }
+          }
+     }
+     printf("%d\n",min);
+     printf("%d\n",med);
+     printf("%d\n",max);
+     printf("\n");
+     printf("%d\n%d\n%d\n",a,b,c);
+     return 0;
+}
